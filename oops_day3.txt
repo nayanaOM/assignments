@@ -1,0 +1,147 @@
+
+1. Given a class named Patient, identify what instance methods could be written in this class. 
+
+Patient
+{
+ createPatientProfile();
+ askPatientId();
+ checkForDisease();
+ getMedicines();
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Given a class named CPU, identify the public & private instance members. 
+
+class 	CPU{
+
+public pendrive;
+public CD;
+public keyboard;
+public powersupply;
+public mouse;
+
+private arithmetic_logical_unit;
+private control_unit;
+private register;
+private cache;
+private bus;
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Given a class named Media, assume there are 3 objects of this class. Identify the static members of this class. 
+
+class Media
+{
+static television;
+static newspaper;
+static radio;
+
+
+Media tv = new Media();
+Media np = new Media();
+Media rd = new Media();
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Given a class named Calculator & its derived classes named Standard and Scientific, identify the method which can be 
+overridden by the derived classes. 
+
+Definition :
+Overriding is the process in which methods in different classes have same name but different implementation.
+
+class Calculator 
+{
+
+	void add()
+	{
+	   int a=10; int b=20;
+	   int c = a+b;
+	   System.out.println(c);
+	}
+}
+
+class Standard extends Calculator 
+{
+	void add(int a, int b)
+	{
+	   int c = a+b;
+	   System.out.println(c);
+	}
+}
+
+class Scientific extends Calculator 
+{
+	void add()
+	{
+	   int a=30; int b=20;
+	   System.out.println(a+b);
+	}
+
+}
+
+class Math
+{
+public static void main(String[] args)
+{
+Calculator c = new Calculator();
+Standard st = new Standard();
+Scientific sc = new Scientific();
+
+c.add();
+st.add(2,4);
+sc.add();
+
+}
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Given the classes Bird, Superman, Aeroplane and Missile, identify the usage of interfaces here. 
+
+
+interface Fly
+{
+
+	public void flyHigh();
+
+}
+
+class Bird implements Fly
+{
+
+	public void flyHigh()
+	{
+	    System.out.println(" Bird is flying");
+	}
+}
+
+class Superman implements Fly
+{
+
+	public void flyHigh()
+	{
+	    System.out.println(" superman is flying");
+	}
+}
+
+class Aeroplane implements Fly
+{
+
+	public void flyHigh()
+	{
+	    System.out.println(" Aeroplane is flying");
+	}
+}
+
+class Missile implements Fly
+{
+
+	public void flyHigh()
+	{
+       	    System.out.println(" Missile is flying");
+	}
+}

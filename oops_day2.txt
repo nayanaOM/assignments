@@ -1,0 +1,58 @@
+1. Given an entity named Television, identify its attributes and explain how will you do Abstraction? 
+
+Atrributes of entity Television are:-
+Cost 
+Dimension
+Display
+Brand
+
+Abstraction means hiding non-essential things/attributes and displaying only essential things/attributes.
+
+In TV user can see essential attributes like audio, vedio and images as well. we can even browse some information in smart TV's.
+But user cannot see non-essential attributes like internal implementation of different devices like speakers,display,circuit boards etc 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Given an entity named Hospital, explain Encapsulation with respect to it. 
+
+Encapsulation means wrapping up of data/information in a single unit.
+
+In Hospital there are different departments like cardiology, casuality, neurology, gynaecology, nephrology, ICU, pharmacy, Billing etc all together 
+constitutes a hospital.So this is how we can give hospital as an example to encapsulation.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Given an entity named TrafficSignal, explain Polymorphism with respect to it. 
+
+Polymorphism in oops can be defined as ability of an object to take multiple forms at a time.
+TrafficSignal can be a best example for Polymorphism. It displays three colors red, yellow and green. red indicates stop, yellow indicates ready to go,
+and green indicates go. So a single TrafficSignal is displaying three forms here.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Given an entity named BroadBandConnection, explain inheritance with respect to it. 
+
+Inheritance in oops is a process where a class derives(child class) all the properties and behaviors from another class(base class).
+
+Broadband is a wide bandwidth transmission that can transmit multiple signals and data over a very high-speed internet connection.
+There are 4 types of broadband connections, namely- DSL, Cable, Fibre Optics and Satellite.
+
+In Inheritance we can consider BroadBandConnection as a base class and DSL, Cable, Fibre Optics and Satellite as its child classes.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Given an entity named MobilePhone, identify its static & dynamic attributes
+
+static attributes of MobilePhone are:
+Operating system
+Battery
+Memory
+Camera
+Storage
+size & weight of mobile
+
+dynamic attributes of MobilePhone are: 
+SIM
+Display settings
+Applications
+Wallpaper
