@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.get("https://jsonplaceholder.typicode.com/todos",function(data,status){
+                    if(status=="success")
+                    {
+                        document.write("<h1>completed todos</h1><select size="+90+">");
+                            for(let i of data)
+                            {
+                                if(i.completed==true){
+                                    document.write("<option>"+i.title+"</option>");
+                                }
+
+                            }
+                            document.write("</select>");
+                            document.write("<h1>Incompleted todos</h1><ol>");
+                                for(let i of data)
+                                {
+                                    if(i.completed!=true)
+                                    {
+                                        document.write("<li>"+i.title+"</li>");
+                                        
+                                    
+                                    }
+                                }
+                                document.write("</ol>");
+                    }
+                    else{
+                        alert("API call failed");
+                    }
+                });
+            });
+        });
+    </script>
+    <button>make a API call</button>
+    
+</body>
+</html>
