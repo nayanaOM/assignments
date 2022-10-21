@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    function linear()
+{
+    var n=parseInt(prompt("Enter the size of an array"));
+    var a=new Array(n);
+    var t=0;
+    for(var i=0; i<a.length; i++)
+    {
+        a[i]=parseInt(console.log("Enter array elements"));
+    }
+    var k=parseInt(console.log("Enter the key element to search: "));
+    for(var i=0; i<a.length; i++)
+    {
+        if(k==a[i])
+        {
+            t=1;
+            break;
+        }
+    }
+    if(t==1)
+    {
+        console.log("Element "+a[i]+ " Found at Position:"+i);
+    }
+    else
+    {
+        console.log("Element Not Found");
+    }
+}
+</script>
+
+<body  onLoad="linear()"></body>
+</html>
